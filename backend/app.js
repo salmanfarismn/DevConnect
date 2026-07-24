@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const helmet = require("helmet");
 
@@ -25,6 +26,7 @@ const authRoutes = require("./routes/authRoutes");
 
 // Middlewares
 app.use(bodyParser.json());
+app.use(cors());
 app.use(helmet());
 const {authenticateToken, authorizeRoles} = require("./middleware/auth");
 

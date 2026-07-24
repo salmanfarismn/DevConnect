@@ -35,6 +35,10 @@ const userSchema = new Schema({
     profileImage: {
         type: String,
     },
+    isVerified: {
+        type: Boolean,
+        deafult: false
+    },
     bio: String,
     skills: [String],
     experience: String,

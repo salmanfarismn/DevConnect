@@ -1,0 +1,217 @@
+/* ==========================================
+   Register Page
+========================================== */
+
+.register-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+/* ==========================================
+   Card
+========================================== */
+
+.register-card{
+
+    width:420px;
+
+    background:var(--card-color);
+
+    border-radius:var(--radius-lg);
+
+    padding:40px;
+
+    box-shadow:var(--shadow-md);
+
+    border:1px solid var(--border-color);
+
+}
+
+/* ==========================================
+   Heading
+========================================== */
+
+.register-title{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.register-subtitle{
+
+    color:var(--text-secondary);
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+   Form
+========================================== */
+
+.register-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+/* ==========================================
+   Material UI
+========================================== */
+
+.register-form .MuiTextField-root,
+
+.register-form .MuiFormControl-root{
+
+    width:100%;
+
+}
+
+.register-form .MuiOutlinedInput-root{
+
+    border-radius:12px;
+
+    background:#FAFBFD;
+
+}
+
+.register-form .MuiOutlinedInput-root fieldset{
+
+    border-color:var(--border-color);
+
+}
+
+.register-form .MuiOutlinedInput-root:hover fieldset{
+
+    border-color:var(--primary-color);
+
+}
+
+.register-form .MuiOutlinedInput-root.Mui-focused fieldset{
+
+    border:2px solid var(--primary-color);
+
+}
+
+.register-form .MuiInputLabel-root{
+
+    color:var(--text-secondary);
+
+}
+
+.register-form .MuiInputLabel-root.Mui-focused{
+
+    color:var(--primary-color);
+
+}
+
+/* ==========================================
+   Register Button
+========================================== */
+
+.register-btn{
+
+    margin-top:8px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.register-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 18px rgba(37,99,235,.25);
+
+}
+
+.register-btn:active{
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+.register-footer{
+
+    margin-top:24px;
+
+    text-align:center;
+
+    color:var(--text-secondary);
+
+}
+
+.register-footer span{
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.register-footer span:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width:500px){
+
+    .register-page{
+
+        padding:20px;
+
+    }
+
+    .register-card{
+
+        width:100%;
+
+        padding:30px 24px;
+
+    }
+
+}
